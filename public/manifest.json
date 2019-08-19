@@ -1,0 +1,33 @@
+{
+  "name": "Metro de Paris",
+  "short_name": "Metro",
+  "icons": [{
+    "src": "https://cdn.glitch.com/560d4027-d1f1-4c0a-b6b6-6b74e6142783%2F128x128.png?v=1565921194003",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/560d4027-d1f1-4c0a-b6b6-6b74e6142783%2F144x144.png?v=1565921207000",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/560d4027-d1f1-4c0a-b6b6-6b74e6142783%2F152x152.png?v=1565921218325",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/560d4027-d1f1-4c0a-b6b6-6b74e6142783%2F192x192.png?v=1565921226837",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/560d4027-d1f1-4c0a-b6b6-6b74e6142783%2F256x256.png?v=1565921232996",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/560d4027-d1f1-4c0a-b6b6-6b74e6142783%2F512x512.png?v=1565921240299",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#3E4EB8",
+  "theme_color": "#2F3BA2"
+}
