@@ -97,6 +97,8 @@
         }
 
         if (app.isLoading) {
+            window.cardLoadTime = performance.now();
+            console.log("Guardo el valor" + window.cardLoadTime + " millisegundos."); 
             app.spinner.setAttribute('hidden', true);
             app.container.removeAttribute('hidden');
             app.isLoading = false;
@@ -112,7 +114,6 @@
 
     app.getSchedule = function (key, label) {
         var url = 'https://api-ratp.pierre-grimaud.fr/v3/schedules/' + key;
-
         var request = new XMLHttpRequest();
         request.onreadystatechange = function () {
             if (request.readyState === XMLHttpRequest.DONE) {
@@ -124,6 +125,7 @@
                     result.created = response._metadata.date;
                     result.schedules = response.result.schedules;
                     app.updateTimetableCard(result);
+                    window.timeResponseApi = performance.now();
                 }
             } else {
                 // Return the initial weather forecast since no data is available.
